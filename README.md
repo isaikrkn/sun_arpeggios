@@ -31,5 +31,4 @@ Live performance system in SuperCollider for split keyboard control with:
 3. Play low notes for bass / drone behavior
 4. Play high notes for arpeggiated texture
 5. Use MIDI controls to shape dynamics and effects
-
 6. 
