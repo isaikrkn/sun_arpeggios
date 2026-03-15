@@ -1,0 +1,48 @@
+TITLE:: SunArpeggios
+summary:: Generative drone and adaptive chord engine with MIDI control.
+categories:: Libraries>Extensions
+related:: Classes/Pbind, Classes/MIDIdef, Classes/SynthDef
+
+DESCRIPTION::
+SunArpeggios is a reusable ambient performance engine for SuperCollider 3.13.0.
+It provides a drone-based synthesis setup, chord generation, MIDI note control,
+chord detection, and external controller mapping.
+
+CLASSMETHODS::
+
+METHOD:: new
+Create a new engine instance.
+
+METHOD:: default
+Return the last initialized instance.
+
+INSTANCEMETHODS::
+
+METHOD:: boot
+Boot the server and initialize audio objects.
+
+METHOD:: play
+Start the default pattern set.
+
+METHOD:: stop
+Stop all running patterns.
+
+METHOD:: setChord
+Set the current root and chord type.
+
+METHOD:: setParam
+Update a runtime parameter in the engine state.
+
+METHOD:: printMidiSources
+Print detected MIDI devices.
+
+METHOD:: cleanupMidiDefs
+Free known MIDIdefs created by the example scripts.
+
+EXAMPLES::
+code::
+SunArpeggios.default ? SunArpeggios.new.boot;
+SunArpeggios.default.play;
+SunArpeggios.default.setChord(60, \minor);
+SunArpeggios.default.stop;
+::

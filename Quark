@@ -1,0 +1,9 @@
+(
+    name: "SunArpeggios",
+    summary: "Generative drone and arpeggio engine with MIDI chord-following for SuperCollider 3.13.0.",
+    author: "OpenAI for Nehemias Alvarado",
+    version: "0.1.0",
+    helpPath: "HelpSource",
+    repository: "https://github.com/isaikrkn/the_sun_arpeggios",
+    dependencies: []
+)
